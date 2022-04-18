@@ -1,0 +1,112 @@
+@keyframes splash--out {
+  0% {
+    opacity: 1;
+    z-index: 1; }
+  70% {
+    opacity: 0.3; }
+  80% {
+    opacity: 0.2; }
+  85% {
+    opacity: 0.15; }
+  90% {
+    opacity: 0.1; }
+  95% {
+    opacity: 0.05; }
+  99% {
+    opacity: 0.01; }
+  100% {
+    opacity: 0;
+    z-index: -1; } }
+
+@keyframes splash--in {
+  0% {
+    opacity: 0;
+    z-index: -1; }
+  70% {
+    opacity: 0.7; }
+  80% {
+    opacity: 0.8; }
+  95% {
+    opacity: 0.95; }
+  99% {
+    opacity: 0.99; }
+  100% {
+    opacity: 1;
+    z-index: 1; } }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body,
+html {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6; }
+
+body {
+  background-image: url(../img/Landscape.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      background-image: url(../img/Portrait.jpg); } }
+
+.grid__social {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  opacity: 1;
+  z-index: 1;
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .grid__social {
+      font-size: 1.4rem; } }
+  .grid__social--icon a {
+    color: #2c9199; }
+
+.video {
+  max-width: 100vw;
+  max-height: 100vh; }
+  .video__wrap video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 1;
+    animation: splash--out 6.2s 1 forwards 4s ease-out;
+    transition: animation 5s ease-out;
+    object-fit: fill;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }

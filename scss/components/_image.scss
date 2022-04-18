@@ -1,0 +1,89 @@
+// Image
+body {
+  background-image: url(../img/Landscape.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  @include respond(phone) {
+    background-image: url(../img/Portrait.jpg);
+  }
+}
+
+// Test
+
+// body{
+//     display: grid;
+//     grid-template-columns: repeat(1, 1fr);
+// }
+
+// img {
+//   // height: 100vh;
+//   // width: 100%;
+
+      
+//   width: 100%;
+//   height: 100vh;
+//   object-fit: cover;
+//   display: block;
+// }
+
+// .img-land{
+//   grid-row: 1 / -1;
+// }
+
+// .photo {
+//   &__wrap {
+//     &--port,
+//     &--phone {
+//       display: none;
+//     }
+
+//     @include respond(tab-land) {
+//       &--port {
+//         display: none;
+//       }
+//       &--land {
+//         display: block;
+//       }
+//     }
+
+//     @include respond(tab-port) {
+//       &--land {
+//         display: none;
+//       }
+//       &--port {
+//         display: block;
+//       }
+//     }
+
+//     @include respond(phone) {
+//       &--land {
+//         display: none;
+//       }
+//       &--port {
+//         display: block;
+//       }
+//     }
+
+//     @include respond(phone-land) {
+//       &--port,
+//       &--phone {
+//         display: none;
+//       }
+//       &--land {
+//         display: block;
+//       }
+//     }
+
+//     @include respond(tab-port-2) {
+//       &--land {
+//         display: none;
+//       }
+//       &--port {
+//         display: block;
+//       }
+//     }
+//   }
+// }
