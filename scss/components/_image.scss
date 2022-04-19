@@ -23,8 +23,7 @@ img {
 
 .photo {
   &__wrap {
-    &--port,
-    &--phone {
+    &--port {
       display: none;
     }
 
@@ -56,8 +55,7 @@ img {
     }
 
     @include respond(phone-land) {
-      &--port,
-      &--phone {
+      &--port {
         display: none;
       }
       &--land {

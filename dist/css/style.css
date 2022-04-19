@@ -70,7 +70,7 @@ img {
   overflow: hidden;
   z-index: 1; }
 
-.photo__wrap--port, .photo__wrap--phone {
+.photo__wrap--port {
   display: none; }
 
 @media only screen and (max-width: 75em) {
@@ -92,7 +92,7 @@ img {
     display: block; } }
 
 @media only screen and (max-height: 31.25em) {
-  .photo__wrap--port, .photo__wrap--phone {
+  .photo__wrap--port {
     display: none; }
   .photo__wrap--land {
     display: block; } }
