@@ -30,6 +30,10 @@ html {
   box-sizing: border-box;
 }
 
+body{
+  overflow: hidden;
+}
+
 // Outline Selector for Text _ REMEMBER TO PUT IN FINAL PROJECT
 // ::selection {
 //   background-color: $medium-green;
